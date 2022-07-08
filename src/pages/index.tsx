@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Container1, Container2, Container3 } from "./stylesIndex";
+import Container1 from "./stylesIndex/stylesIndex1";
+import Container2 from "./stylesIndex/stylesIndex2";
+import Container3 from "./stylesIndex/stylesIndex3";
 
 export default function Home() {
   return (

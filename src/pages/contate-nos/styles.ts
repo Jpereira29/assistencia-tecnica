@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+const  Container = styled.div`
 background: url('images/bg-contato.png');
 background-repeat: no-repeat;
 height: 100vh;
@@ -10,7 +10,7 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 
-    #content {
+    .content {
         max-width: 1100px;
         height: 8rem;
 
@@ -26,7 +26,7 @@ flex-direction: column;
         input {
             margin-left: 1rem;
         }
-        input[type="text"] {
+        input[type="email"] {
             width: 400px;
             height: 30px;
 
@@ -37,7 +37,7 @@ flex-direction: column;
             width: 82px;
             height: 32px;
 
-            background: url(button.jpg);
+            background: none;
             border: 1.5px solid #FFFFFF;
             border-radius: 50px;
 
@@ -67,24 +67,31 @@ flex-direction: column;
     }
 
     @media (max-width: 500px) {
-        font-size: 16px;
-        #content {
-            height: 250px;
-            padding: 30px;
-
+        font-size: 18px;
+        height: 100vh;
+        .content {
             flex-direction: column;
-            input[type="text"] {
+            height: 350px;
+
+            input {
+                margin-left: 0;
+                height: 8rem;
+            }
+            input[type="email"] {
+                width: 300px;
                 height: 40px;
-                width: 250px;
                 margin-top: 30px;
             }
             input[type="button"] {
+                width: 300px;
                 height: 40px;
-                width: 250px;
                 margin-top: 30px;
+                border: 3px solid white;
 
             }
         }
     }
 
 `
+
+export default Container

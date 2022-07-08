@@ -1,59 +1,6 @@
 import styled from "styled-components";
 
-export const Container1 = styled.div`
-background: url("/images/background.png");
-background-repeat: no-repeat;
-height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-    font-family: "Rubik Moonrocks";
-    max-width: 800px;
-    }
-
-    h2 {
-    font-family: "Shrikhand";
-    }
-
-    @media (max-width: 500px) {
-        h1 {
-            font-size: 20px;
-            margin-top: -200px;
-            max-width: 320px;
-        }
-    }
-
-`
-export const Container2 = styled.div`
-
-height: 100vh;
-padding: 5rem 0;
-    h1 {
-        margin-bottom: 2.5rem;
-        margin-left: 2rem;
-    }
-
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 450px;
-        background: url('/images/quemsomos.png');
-        background-repeat: no-repeat;
-        background-position: center;
-
-        h2 {
-            max-width: 550px;
-        }
-    }
-
-`
-
-export const Container3 = styled.div`
+const Container3 = styled.div`
 padding: 8rem 0;
 height: 100vh;
 margin-bottom: 2.5rem;
@@ -152,16 +99,19 @@ h1 {
     @media (max-width: 500px) {
         height: 170vh;
         .content {
-        flex-direction: column;
+            padding-top: 1.5rem;
+            flex-direction: column;
             #elipse1 {
-                    height: 100%
+                height: 100%
             }
             #elipse2 {
-                    height: 100%
+                height: 100%
             }            
             #elipse3 {
-                    height: 100%
+                height: 100%
             }
         }
     }
 `
+
+export default Container3
